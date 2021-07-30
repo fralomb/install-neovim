@@ -22,4 +22,5 @@ git checkout stable
 make -j4
 
 # install to default location `/usr/local`
+make CMAKE_BUILD_TYPE=RelWithDebInfo
 sudo make install

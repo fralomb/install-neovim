@@ -2,3 +2,4 @@
 2. `git clone https://github.com/neovim/neovim`
 3. `cd neovim && git checkout stable && make -j4`
 4. `sudo make install` => Default install location in `/user/local`
+5. To force a path hash update, use `hash -r`
