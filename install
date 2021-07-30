@@ -1,0 +1,25 @@
+#!/bin/bash
+
+# install requirements
+sudo apt-get install  ninja-build \
+                      gettext \
+                      libtool \
+                      libtool-bin \
+                      autoconf \
+                      automake \
+                      cmake \
+                      g++ \
+                      pkg-config \
+                      unzip \
+                      curl
+
+# clone neovim
+git clone https://github.com/neovim/neovim
+
+# build stable version
+cd neovim
+git checkout stable
+make -j4
+
+# install to default location `/usr/local`
+sudo make install
